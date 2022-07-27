@@ -2,8 +2,8 @@ FROM node
 
 WORKDIR /usr/src/app
 
-RUN npm install
-
 COPY ./ ./usr/src/app
+
+RUN npm install
 
 CMD ["node", "index.js"]
